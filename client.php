@@ -2,7 +2,7 @@
 require_once("lib/nusoap.php");
 $c = new nusoap_client("http://l/kuliah/terdistribusi/nusoap/onepieceserver.php?wsdl", true);
 ($x = $c->getError()) ? print($x) : 0;//if shorthand
-$h = $c->call("getInfo", array("name" => "ferrsy"));
+$h = $c->call("getInfo", array("name" => "rendy"));
 if ($c->fault){
 	die($c->fault);
 }else{
